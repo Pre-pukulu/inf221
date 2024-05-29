@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Center the form container */
+.form-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+/* Form styles */
+form {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: green;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+  width: 400px;
+  color: rgb(91, 26, 176); /* Set the text color to green */
+}
+
+h2 {
+  text-align: center;
+  color: green; /* Set the heading color to green */
+}
+
+p {
+  text-align: center;
+  color: green; /* Set the paragraph color to green */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: green; /* Set the button background color to green */
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button[type="submit"]:hover {
+  background-color: darkgreen; /* Darken the button background color on hover */
 }
